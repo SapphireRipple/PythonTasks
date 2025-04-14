@@ -1,0 +1,72 @@
+{
+    "task1": {
+        "id": "1",
+        "name": "Fetch API data", 
+        "priority": 1,
+        "dependencies": [],
+        "command": "Fetching data from API..."
+    },
+    "task2": {
+        "id": "2",
+        "name": "Parse CSV files",
+        "priority": 2,
+        "dependencies": ["1"],
+        "command": "Parsing downloaded CSV files..."
+    },
+    "task3": {
+        "id": "3",
+        "name": "Clean Data",
+        "priority": 3,
+        "dependencies": ["2"],
+        "command": "Cleaning parsed data..."
+    },
+    "task4": {
+        "id": "4",
+        "name": "Train Machine Learning Model",
+        "priority": 4,
+        "dependencies": ["3"],
+        "command": "Training ML model..."
+    },
+    "task5": {
+        "id": "5",
+        "name": "Run Unit Tests",
+        "priority": 2,
+        "dependencies": ["7"],
+        "command": "Running unit tests..."
+    },
+    "task6": {
+        "id": "6",
+        "name": "Deploy to Production",
+        "priority": 5,
+        "dependencies": ["4", "5"],
+        "command": "Deploying to production..."
+    },
+    "task7": {
+        "id": "7",
+        "name": "Send Completion Email",
+        "priority": 6,
+        "dependencies": ["6"],
+        "command": "Sending completion email..."
+    },
+    "task8": {
+        "id": "8",
+        "name": "Backup Database",
+        "priority": 3,
+        "dependencies": [],
+        "command": "Backing up database..."
+    },
+    "task9": {
+        "id": "9",
+        "name": "Cleanup Temp Files",
+        "priority": 4, 
+        "dependencies": ["6"],
+        "command": "Cleaning up temporary files..."
+    },
+    "task10": {
+        "id": "10",
+        "name": "Generate Performance Report",
+        "priority": 4,
+        "dependencies": ["6"],
+        "command": "Generating preformance report..."
+    }
+}
